@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    color: #00BFFF;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00BFFF;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #00BFFF;
+    margin-bottom: 10px;
+  }
+  
+  section {
+    background-color: #222;
+    border: 1px solid #00BFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+    padding: 5px;
+  }
+  
+  button {
+    background-color: #00E676;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00BFA5;
+  }
+  
+  p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    color: #00BFFF;
+  }
+  
+  select {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #resultMass, #resultVolume, #resultLength, #resultDensity {
+    text-align: center;
+    margin-top: 20px;
+    color: #00BFFF;
+    font-size: 18px;
+  }
+  

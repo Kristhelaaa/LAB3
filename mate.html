@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operaciones Aritméticas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Operaciones Aritméticas</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Suma</h2>
+      <input type="number" id="num1">
+      +
+      <input type="number" id="num2">
+      <button onclick="sumar()">Calcular</button>
+      <p id="resultadoSuma"></p>
+    </section>
+
+    <section>
+      <h2>Resta</h2>
+      <input type="number" id="num3">
+      -
+      <input type="number" id="num4">
+      <button onclick="restar()">Calcular</button>
+      <p id="resultadoResta"></p>
+    </section>
+
+    <section>
+      <h2>Multiplicación</h2>
+      <input type="number" id="num5">
+      x
+      <input type="number" id="num6">
+      <button onclick="multiplicar()">Calcular</button>
+      <p id="resultadoMultiplicacion"></p>
+    </section>
+
+    <section>
+      <h2>División</h2>
+      <input type="number" id="num7">
+      ÷
+      <input type="number" id="num8">
+      <button onclick="dividir()">Calcular</button>
+      <p id="resultadoDivision"></p>
+    </section>
+  </main>
+
+  <header>
+    <h1>Potencia</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Calcular Potencia</h2>
+      <input type="number" id="base" placeholder="Base">
+      <sup>
+        <input type="number" id="exponente" placeholder="Exponente">
+      </sup>
+      <button onclick="calcularPotencia()">Calcular</button>
+      <p id="resultadoPotencia"></p>
+    </section>
+  </main>
+
+  <header>
+    <h1>Raíz Cuadrada</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Calcular Raíz Cuadrada</h2>
+      <input type="number" id="numero" placeholder="Ingrese un número">
+      <button onclick="calcularRaizCuadrada()">Calcular</button>
+      <p id="resultadoRaiz"></p>
+    </section>
+  </main>
+  <header>
+    <h1>Calculadora de Áreas</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Área del Triángulo</h2>
+      <label for="baseTriangulo">Base:</label>
+      <input type="number" id="baseTriangulo">
+      <label for="alturaTriangulo">Altura:</label>
+      <input type="number" id="alturaTriangulo">
+      <button onclick="calcularAreaTriangulo()">Calcular</button>
+      <p id="resultadoTriangulo"></p>
+    </section>
+
+    <section>
+      <h2>Área del Círculo</h2>
+      <label for="radioCirculo">Radio:</label>
+      <input type="number" id="radioCirculo">
+      <button onclick="calcularAreaCirculo()">Calcular</button>
+      <p id="resultadoCirculo"></p>
+    </section>
+
+    <section>
+      <h2>Área del Rectángulo</h2>
+      <label for="baseRectangulo">Base:</label>
+      <input type="number" id="baseRectangulo">
+      <label for="alturaRectangulo">Altura:</label>
+      <input type="number" id="alturaRectangulo">
+      <button onclick="calcularAreaRectangulo()">Calcular</button>
+      <p id="resultadoRectangulo"></p>
+    </section>
+  </main>
+
+    <h1>Conversor de Masa</h1>
+    <form>
+        <label for="inputUnit">Unidad de origen:</label>
+        <select id="inputUnit">
+            <option value="kg">Kilogramos (kg)</option>
+            <option value="g">Gramos (g)</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+
+        <label for="inputValue">Valor:</label>
+        <input type="number" id="inputValue" placeholder="Ingresa el valor">
+
+        <label for="outputUnit">Unidad de destino:</label>
+        <select id="outputUnit">
+            <option value="kg">Kilogramos (kg)</option>
+            <option value="g">Gramos (g)</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+
+        <button type="button" onclick="convert()">Convertir</button>
+    </form>
+
+    <div id="result"></div>
+
+    <h1>Conversor de Volumen</h1>
+    <form>
+        <label for="inputUnit">Unidad de origen:</label>
+        <select id="inputUnit">
+            <option value="liters">Litros (L)</option>
+            <option value="milliliters">Mililitros (mL)</option>
+            <option value="cubic_meters">Metros cúbicos (m³)</option>
+            <option value="gallons">Galones (gal)</option>
+        </select>
+
+        <label for="inputValue">Valor:</label>
+        <input type="number" id="inputValue" placeholder="Ingresa el valor">
+
+        <label for="outputUnit">Unidad de destino:</label>
+        <select id="outputUnit">
+            <option value="liters">Litros (L)</option>
+            <option value="milliliters">Mililitros (mL)</option>
+            <option value="cubic_meters">Metros cúbicos (m³)</option>
+            <option value="gallons">Galones (gal)</option>
+        </select>
+
+        <button type="button" onclick="convert3()">Convertir</button>
+    </form>
+
+    <div id="result"></div>
+
+    <h1>Conversor de Longitud</h1>
+    <form>
+        <label for="inputUnit">Unidad de origen:</label>
+        <select id="inputUnit">
+            <option value="meters">Metros (m)</option>
+            <option value="centimeters">Centímetros (cm)</option>
+            <option value="inches">Pulgadas (in)</option>
+            <option value="feet">Pies (ft)</option>
+        </select>
+
+        <label for="inputValue">Valor:</label>
+        <input type="number" id="inputValue" placeholder="Ingresa el valor">
+
+        <label for="outputUnit">Unidad de destino:</label>
+        <select id="outputUnit">
+            <option value="meters">Metros (m)</option>
+            <option value="centimeters">Centímetros (cm)</option>
+            <option value="inches">Pulgadas (in)</option>
+            <option value="feet">Pies (ft)</option>
+        </select>
+
+        <button type="button" onclick="convert()">Convertir</button>
+    </form>
+
+    <div id="result"></div>
+
+    <h1>Conversor de Densidad</h1>
+    <form>
+        <label for="inputUnit">Unidad de origen:</label>
+        <select id="inputUnit">
+            <option value="kg/m3">Kilogramos por metro cúbico (kg/m³)</option>
+            <option value="g/cm3">Gramos por centímetro cúbico (g/cm³)</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+
+        <label for="inputValue">Valor:</label>
+        <input type="number" id="inputValue" placeholder="Ingresa el valor">
+
+        <label for="outputUnit">Unidad de destino:</label>
+        <select id="outputUnit">
+            <option value="kg/m3">Kilogramos por metro cúbico (kg/m³)</option>
+            <option value="g/cm3">Gramos por centímetro cúbico (g/cm³)</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+
+        <button type="button" onclick="convert()">Convertir</button>
+    </form>
+    
+
+    <div id="result"></div>
+
+    <header>
+        <h1>Conversor de Informática</h1>
+      </header>
+    
+      <main>
+        <form>
+          <label for="inputUnit">Unidad de origen:</label>
+          <select id="inputUnit">
+            <option value="bit">Bit (b)</option>
+            <option value="byte">Byte (B)</option>
+            <option value="kilobyte">Kilobyte (KB)</option>
+            <option value="megabyte">Megabyte (MB)</option>
+            <option value="gigabyte">Gigabyte (GB)</option>
+            <option value="terabyte">Terabyte (TB)</option>
+          </select>
+    
+          <label for="inputValue">Valor:</label>
+          <input type="number" id="inputValue" placeholder="Ingresa el valor">
+    
+          <label for="outputUnit">Unidad de destino:</label>
+          <select id="outputUnit">
+            <option value="bit">Bit (b)</option>
+            <option value="byte">Byte (B)</option>
+            <option value="kilobyte">Kilobyte (KB)</option>
+            <option value="megabyte">Megabyte (MB)</option>
+            <option value="gigabyte">Gigabyte (GB)</option>
+            <option value="terabyte">Terabyte (TB)</option>
+          </select>
+    
+          <button type="button" onclick="convert()">Convertir</button>
+        </form>
+    
+        <div id="result"></div>
+      </main>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
